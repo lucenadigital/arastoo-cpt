@@ -28,10 +28,10 @@ add_action( 'admin_menu', 'arastoo_cpt_options' );
 function arastoo_cpt_options() {
  
 	add_options_page(
-		'Arastoo CPT', // page <title>Title</title>
-		'Arastoo CPT', // menu link text
+		'Arastoo CPT', // The Page Title
+		'Arastoo CPT', // Menu link text
 		'manage_options', // capability to access the page
-		'arastoo-cpt', // page URL slug
+		'arastoo-cpt', // This is the page URL slug
 		'arastoo_cpt_options_content', // callback function with content
 		2 // priority
 	);
@@ -84,8 +84,7 @@ function arastoo_cpt_options_content(){ ?>
 <?php }
 
 // REGISTERING CUSTOM POST TYPES
-// BLOCK MANAGEMENT
-//OUR TEAM
+
 if ( ! function_exists( 'create_post_type' ) ) :
 
 function create_post_type() {
@@ -97,15 +96,15 @@ function create_post_type() {
 	register_post_type( $arastoo_cpt_title, // change the name
 		array(
 			'labels' => array(
-				'name' => __( $arastoo_cpt_title ), // change the name
-				'singular_name' => __( $arastoo_cpt_title ), // change the name
+				'name' => __( $arastoo_cpt_title ), // variable name
+				'singular_name' => __( $arastoo_cpt_title ), // variable name
 			),
 			'public' => true,
-			'supports' => array ( 'title', 'editor', 'custom-fields', 'page-attributes', 'thumbnail' ), // extra options
+			'supports' => array ( 'title', 'editor', 'custom-fields', 'page-attributes', 'thumbnail' ), // some extra options
 			//'taxonomies' => array( 'category', 'post_tag' ), //  categories and tags
-			'hierarchical' => false,
-			'menu_icon' => 'dashicons-admin-page',
-			'rewrite' => array ( 'slug' => __( $arastoo_cpt_slug ) ) // change the name
+			'hierarchical' => false, // set false to act similar to page
+			'menu_icon' => 'dashicons-admin-page', // menu icon
+			'rewrite' => array ( 'slug' => __( $arastoo_cpt_slug ) ) // change url slag
 		)
 	);
 	register_post_type( $arastoo_cpt_title_two, // change the name
@@ -117,9 +116,9 @@ function create_post_type() {
 			'public' => true,
 			'supports' => array ( 'title', 'editor', 'page-attributes', 'thumbnail' ), // extra options
 			//'taxonomies' => array( 'category', 'post_tag' ), //  categories and tags
-			'hierarchical' => false,
-			'menu_icon' => 'dashicons-admin-page',
-			'rewrite' => array ( 'slug' => __( $arastoo_cpt_slug_two ) ) // change the name
+			'hierarchical' => false, // set false to act like page
+			'menu_icon' => 'dashicons-admin-page', // menu icon
+			'rewrite' => array ( 'slug' => __( $arastoo_cpt_slug_two ) ) // change url slug
 		)
 	);
 
