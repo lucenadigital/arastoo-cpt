@@ -6,7 +6,7 @@
 /*
 Plugin Name: Arastoo CPT
 Plugin URI: https://github.com/lucenadigital/arastoo-cpt/
-Description: Smart, Lightweight Custom Post Type
+Description: Smart, Lightweight Custom Post Type. This plugin can help you create upto 2 custom post type CPT.
 Author: Arteo
 Version: 1
 Author URI: https://www.michaelcastrillo.com
