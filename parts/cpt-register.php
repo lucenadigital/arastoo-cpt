@@ -124,4 +124,22 @@ function arastoo_cpt_options_content() { ?>
 
 <?php } 
 
+add_filter( 'plugin_action_links_arastoo-cpt/arastoo-cpt.php', 'arastocpt_settings_link' );
+function arastocpt_settings_link( $links ) {
+	// Build and escape the URL.
+	$url = esc_url( add_query_arg(
+		'page',
+		'arastoo-cpt',
+		get_admin_url() . 'options-general.php'
+	) );
+	// Create the link.
+	$settings_link = "<a href='$url'>" . __( 'Settings' ) . '</a>';
+	// Adds the link to the end of the array.
+	array_push(
+		$links,
+		$settings_link
+	);
+	return $links;
+}//end arastocpt_settings_link()
+
 ?>
