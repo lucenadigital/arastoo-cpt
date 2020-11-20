@@ -124,8 +124,8 @@ function arastoo_cpt_options_content() { ?>
 
 <?php } 
 
-add_filter( 'plugin_action_links_arastoo-cpt/arastoo-cpt.php', 'arastocpt_settings_link' );
-function arastocpt_settings_link( $links ) {
+add_filter( 'plugin_action_links_arastoo-cpt/arastoo-cpt.php', 'arastoocpt_settings_link' );
+function arastoocpt_settings_link( $links ) {
 	// Build and escape the URL.
 	$url = esc_url( add_query_arg(
 		'page',
