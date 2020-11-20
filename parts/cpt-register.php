@@ -3,8 +3,8 @@
 // BLOCK MANAGEMENT
 //OUR TEAM
 
-if ( ! function_exists( 'create_post_type' ) ) :
- function create_post_type() {
+if ( ! function_exists( 'arastoo_create_post_type' ) ) :
+ function arastoo_create_post_type() {
 
 	$arastoo_cpt_title = get_option('arastoo_cpt_title');
 	$arastoo_cpt_title_two = get_option('arastoo_cpt_title_two');
