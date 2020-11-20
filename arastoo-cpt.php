@@ -18,7 +18,7 @@ $plugin_dir = ABSPATH . 'wp-content/plugins/arastoo-cpt/';
 include $plugin_dir . 'assets/cpt-script.js';
 include $plugin_dir . 'parts/cpt-register.php';
 
-add_action( 'init', 'create_post_type' );
+add_action( 'init', 'arastoo_create_post_type' );
 add_action('admin_init', 'arastoo_cpt_group_settings');
 add_action( 'admin_menu', 'arastoo_cpt_options' );
 
