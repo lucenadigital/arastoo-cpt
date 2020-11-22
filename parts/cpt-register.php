@@ -1,5 +1,5 @@
- <?php 
- 
+<?php
+
 // REGISTERING CUSTOM POST TYPES
 function arastoo_cpt_create_main() {
 
