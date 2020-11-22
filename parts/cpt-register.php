@@ -84,27 +84,27 @@ function arastoo_cpt_options_content() { ?>
                 <th><label for="arastoo_cpt_title_id">CPT Title:</label></th>
  
                 <td>
-		<input type = "text" class="regular-text" id="arastoo_cpt_title_id" name="arastoo_cpt_title" value="<?php echo get_option('arastoo_cpt_title'); ?>"> <button type="button" onclick="ClearCPTtitle1();">Clear</button> <em id="alert-one" style="color:#F00;"></em>
+<input type = "text" class="regular-text" id="arastoo_cpt_title_id" name="arastoo_cpt_title" value="<?php echo get_option('arastoo_cpt_title'); ?>"> <button type="button" onclick="ClearCPTtitle1();">Clear</button> <em id="alert-one" style="color:#F00;"></em>
                 </td>
             </tr>
  
             <tr>
                 <th><label for="arastoo_cpt_slug_id">CPT Slug:</label></th>
                 <td>
-		<input type = "text" class="regular-text" id="arastoo_cpt_slug_id" name="arastoo_cpt_slug" value="<?php echo get_option('arastoo_cpt_slug'); ?>">
+<input type = "text" class="regular-text" id="arastoo_cpt_slug_id" name="arastoo_cpt_slug" value="<?php echo get_option('arastoo_cpt_slug'); ?>">
                 </td>
             </tr>
  
             <tr>
                 <th><label for="arastoo_cpt_title_two_id">CPT Title 2:</label></th>
-  		<td>
-		<input type = "text" class="regular-text" id="arastoo_cpt_title_two_id" name="arastoo_cpt_title_two" value="<?php echo get_option('arastoo_cpt_title_two'); ?>"> <button type="button" onclick="ClearCPTtitle2();">Clear</button> <em id="alert-two" style="color:#F00;"></em>
+   <td>
+<input type = "text" class="regular-text" id="arastoo_cpt_title_two_id" name="arastoo_cpt_title_two" value="<?php echo get_option('arastoo_cpt_title_two'); ?>"> <button type="button" onclick="ClearCPTtitle2();">Clear</button> <em id="alert-two" style="color:#F00;"></em>
                 </td>
             </tr>
             <tr>
                 <th><label for="arastoo_cpt_slug_two_id">CPT Slug 2:</label></th>
                 <td>
-		<input type = "text" class="regular-text" id="arastoo_cpt_slug_two_id" name="arastoo_cpt_slug_two" value="<?php echo get_option('arastoo_cpt_slug_two'); ?>">
+<input type = "text" class="regular-text" id="arastoo_cpt_slug_two_id" name="arastoo_cpt_slug_two" value="<?php echo get_option('arastoo_cpt_slug_two'); ?>">
                 </td>
             </tr>
         </table>
@@ -118,6 +118,10 @@ function arastoo_cpt_options_content() { ?>
 	</div>
 
 <?php } 
+
+function arastoo_load_my_scripts() {
+	wp_enqueue_script( 'cpt_script', plugin_dir_url( __FILE__ ) . 'assets/cpt-script.js', array(), '1.0.0' );
+}
 
 add_filter( 'plugin_action_links_arastoo-cpt/arastoo-cpt.php', 'arastoocpt_settings_link' );
 function arastoocpt_settings_link( $links ) {
@@ -135,6 +139,6 @@ function arastoocpt_settings_link( $links ) {
 		$settings_link
 	);
 	return $links;
-}//end arastoocpt_settings_link()
+}//end arastocpt_settings_link()
 
 ?>
