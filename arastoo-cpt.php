@@ -13,7 +13,7 @@ Author URI: https://www.michaelcastrillo.com/
 */
 
 /** Include parts & assets files **/
-include plugin_dir_path( __FILE__ ) . 'parts/arastoo_cf_functions.php';
+include plugin_dir_path( __FILE__ ) . 'parts/cpt-register.php';
 include plugin_dir_path( __FILE__ ) . 'assets/cpt-script.js';
 
 /** Initiate functions **/
