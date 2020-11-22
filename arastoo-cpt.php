@@ -14,12 +14,16 @@ Author URI: https://www.michaelcastrillo.com/
 
 /** Include parts & assets files **/
 include plugin_dir_path( __FILE__ ) . 'parts/cpt-register.php';
-include plugin_dir_path( __FILE__ ) . 'assets/cpt-script.js';
+
 
 /** Initiate functions **/
 add_action( 'init', 'arastoo_cpt_create_main' );
 add_action('admin_init', 'arastoo_cpt_group_settings');
 add_action( 'admin_menu', 'arastoo_cpt_options' );
+
+/** Add custom js to plugin settings **/
+add_action( 'admin_enqueue_scripts', 'arastoo_load_my_scripts' );
+
 
 
 	
