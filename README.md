@@ -27,6 +27,9 @@ You can add up to Two custom post type
 * arastoo-cpt-options-settings.png - Options settings 
 
 == Changelog ==
+= V1.0.3 =
+* enabled taxonomy category
+
 = V1.0.2 = 
 * Fixed "Calling file locations poorly"
 * Fixed generic functions names
