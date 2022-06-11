@@ -1,14 +1,14 @@
 <?php
 /**
  * @package Arastoo CPT
- * @version 1.0.2
+ * @version 1.0.3
  */
 /*
 Plugin Name: Arastoo CPT
 Plugin URI: https://github.com/lucenadigital/arastoo-cpt/
 Description: Smart Plugin that can create upto two Custom Post Type. Settings > Arastoo CPT
 Author: Arteo
-Version: 1.0.2
+Version: 1.0.3
 Author URI: https://www.michaelcastrillo.com/
 */
 
