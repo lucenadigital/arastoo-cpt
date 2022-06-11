@@ -3,7 +3,7 @@ Contributors: Arteo
 Tags: custom post type, cpt, simple custom post type, easy
 Donate link:  https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=SFB86DRUEMPGC&currency_code=USD&amount=5
 Requires at least: 4.7
-Tested up to: 5.4
+Tested up to: 6.0
 Requires PHP: 7.0
 Stable tag: 1.0.1
 License: GPLv2 or later
