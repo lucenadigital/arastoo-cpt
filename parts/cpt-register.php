@@ -20,7 +20,7 @@ function arastoo_cpt_create_main() {
 					),
 					'public' => true,
 					'supports' => array ( 'title', 'editor', 'custom-fields', 'page-attributes', 'thumbnail' ), // extra options
-					//'taxonomies' => array( 'category', 'post_tag' ), //  categories and tags
+					'taxonomies' => array( 'category', 'post_tag' ), //  categories and tags
 					'hierarchical' => true,
 					'menu_icon' => 'dashicons-admin-page',
 					'rewrite' => array ( 'slug' => __( $arastoo_cpt_slug ) ) // change the name
@@ -40,7 +40,7 @@ function arastoo_cpt_create_main() {
 					),
 					'public' => true,
 					'supports' => array ( 'title', 'editor', 'page-attributes', 'thumbnail' ), // extra options
-					//'taxonomies' => array( 'category', 'post_tag' ), //  categories and tags
+					'taxonomies' => array( 'category', 'post_tag' ), //  categories and tags
 					'hierarchical' => true,
 					'menu_icon' => 'dashicons-admin-page',
 					'rewrite' => array ( 'slug' => __( $arastoo_cpt_slug_two ) ) // change the name
